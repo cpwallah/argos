@@ -27,7 +27,7 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: 100xdevs/todo-app-week-39:${{ github.sha }}
+          tags: cpwallah/todo-app-week-39:${{ github.sha }}
 
       - name: Clone staging-ops repo, update image tags, and push tags
         env:
