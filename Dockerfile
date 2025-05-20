@@ -1,5 +1,8 @@
 FROM node:alpine
 
+# Install pnpm globally
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
 WORKDIR /app
 
 COPY . .
